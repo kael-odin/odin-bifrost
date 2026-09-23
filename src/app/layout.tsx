@@ -22,8 +22,17 @@ const youngSerif = Young_Serif({
   display: "swap",
 });
 
+// 站点地址随部署平台变化：Pages 子路径 / Vercel 生产域名 / 本地
+const siteUrl =
+  process.env.NEXT_PUBLIC_SITE_URL ??
+  (process.env.GITHUB_ACTIONS
+    ? "https://kael-odin.github.io/odin-bifrost"
+    : process.env.VERCEL_PROJECT_PRODUCTION_URL
+      ? `https://${process.env.VERCEL_PROJECT_PRODUCTION_URL}`
+      : "http://localhost:3000");
+
 export const metadata: Metadata = {
-  metadataBase: new URL("https://kael-odin.github.io/odin-bifrost"),
+  metadataBase: new URL(siteUrl),
   title: siteConfig.title,
   description: siteConfig.description,
   keywords: ["汤勇", "Kael Odin", "个人作品集", "开发者", "全栈", "AI 工具", "徐州"],
@@ -31,7 +40,7 @@ export const metadata: Metadata = {
   openGraph: {
     type: "website",
     locale: "zh_CN",
-    url: "https://kael-odin.github.io/odin-bifrost",
+    url: siteUrl,
     siteName: "汤勇 Kael Odin 的个人作品集",
     title: siteConfig.title,
     description: siteConfig.description,
