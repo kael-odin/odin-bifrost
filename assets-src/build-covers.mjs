@@ -122,7 +122,7 @@ const G = {
 
 cover({
   file: "cover-my-os.svg", title: "My OS Homepage",
-  subtitle: "github.com/kael-odin/my-os-homepage",
+  subtitle: "github.com/kael-odin/odin-heim",
   from: "#0F172A", to: "#1E3A8A", accent: "#38BDF8", glyph: G.terminal("#38BDF8"),
 });
 cover({
@@ -132,7 +132,7 @@ cover({
 });
 cover({
   file: "cover-blog.svg", title: "Kael's Blog",
-  subtitle: "github.com/kael-odin/kael-odin-blog",
+  subtitle: "github.com/kael-odin/odin-saga",
   from: "#042F2E", to: "#0F766E", accent: "#2DD4BF", glyph: G.pen("#2DD4BF"),
 });
 cover({
@@ -141,8 +141,8 @@ cover({
   from: "#111827", to: "#3730A3", accent: "#A5B4FC", glyph: G.research("#A5B4FC"),
 });
 cover({
-  file: "cover-devfolio.svg", title: "Devfolio 模板",
-  subtitle: "github.com/kael-odin/devfolio",
+  file: "cover-devfolio.svg", title: "Odin Valhalla 模板",
+  subtitle: "github.com/kael-odin/odin-valhalla",
   from: "#0C0A09", to: "#44403C", accent: "#FBBF24", glyph: G.windowDark("#FBBF24"),
 });
 cover({

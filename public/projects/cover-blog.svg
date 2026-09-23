@@ -22,5 +22,5 @@
   <path d="M 600 300 l 10 -2 54 -54" stroke="#0B0F18" stroke-width="3" fill="none"/>
   <rect x="56" y="356" width="120" height="7" rx="3.5" fill="url(#bar)"/>
   <text x="56" y="416" font-family="'Segoe UI', system-ui, -apple-system, Arial, sans-serif" font-size="44" font-weight="700" fill="#F8FAFC">Kael's Blog</text>
-  <text x="56" y="452" font-family="Consolas, 'Courier New', monospace" font-size="19" fill="#2DD4BF">github.com/kael-odin/kael-odin-blog</text>
+  <text x="56" y="452" font-family="Consolas, 'Courier New', monospace" font-size="19" fill="#2DD4BF">github.com/kael-odin/odin-saga</text>
 </svg>

@@ -276,7 +276,7 @@ export default function AboutContent() {
               </a>
 
               <a
-                href="https://kael-odin.github.io/my-os-homepage/"
+                href="https://kael-odin.github.io/odin-heim/"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="group/card flex items-start gap-3 rounded-2xl border border-gray-200 bg-gray-50/70 p-4 transition-all duration-300 hover:-translate-y-1 hover:border-violet-300 hover:shadow-[0_12px_24px_rgba(124,58,237,0.12)] dark:border-gray-700 dark:bg-[#111821] dark:hover:border-violet-600"

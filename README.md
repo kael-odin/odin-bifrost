@@ -2,7 +2,7 @@
 
 基于 **Next.js 16（App Router）+ TypeScript** 的 Bento 网格风格个人主页，纯静态导出，部署在 GitHub Pages。
 
-线上地址：<https://kael-odin.github.io/>
+线上地址：<https://kael-odin.github.io/odin-bifrost/>
 
 ---
 

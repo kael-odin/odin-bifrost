@@ -4,12 +4,12 @@
  */
 export const projectsData = [
   {
-    name: "My OS Homepage",
+    name: "Odin Heim",
     description:
       "以「操作系统」为灵感的互动个人主页模板：终端开机动画 → 数字桌面。改一个配置文件就能变成你自己的主页。",
     image: "/projects/cover-my-os.svg",
-    github: "https://github.com/kael-odin/my-os-homepage",
-    view: "https://kael-odin.github.io/my-os-homepage/",
+    github: "https://github.com/kael-odin/odin-heim",
+    view: "https://kael-odin.github.io/odin-heim/",
     workStatus: true,
     date: "2026 · 09",
     demo: false,
@@ -42,7 +42,7 @@ export const projectsData = [
     description:
       "个人博客与笔记：技术、项目、随笔。Next.js + Markdown，记录踩坑与思考。",
     image: "/projects/cover-blog.svg",
-    github: "https://github.com/kael-odin/kael-odin-blog",
+    github: "https://github.com/kael-odin/odin-saga",
     view: "https://kael-odin-blog.vercel.app",
     workStatus: true,
     date: "2026 · 03",
@@ -89,12 +89,12 @@ export const projectsData = [
     ],
   },
   {
-    name: "Devfolio 模板",
+    name: "Odin Valhalla 模板",
     description:
       "深色开发者作品集模板（React + Vite + Tailwind）：主页、时间线、技能、项目、奖项、统计、联系，改 data/*.json 就能用。",
     image: "/projects/cover-devfolio.svg",
-    github: "https://github.com/kael-odin/devfolio",
-    view: "https://kael-odin.github.io/devfolio/",
+    github: "https://github.com/kael-odin/odin-valhalla",
+    view: "https://kael-odin.github.io/odin-valhalla/",
     workStatus: false,
     date: "2026 · 09",
     demo: false,

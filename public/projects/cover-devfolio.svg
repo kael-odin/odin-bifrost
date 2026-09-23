@@ -23,5 +23,5 @@
   <circle cx="668" cy="240" r="26" fill="#FBBF24" opacity="0.25"/>
   <rect x="56" y="356" width="120" height="7" rx="3.5" fill="url(#bar)"/>
   <text x="56" y="416" font-family="'Segoe UI', system-ui, -apple-system, Arial, sans-serif" font-size="44" font-weight="700" fill="#F8FAFC">Devfolio 模板</text>
-  <text x="56" y="452" font-family="Consolas, 'Courier New', monospace" font-size="19" fill="#FBBF24">github.com/kael-odin/devfolio</text>
+  <text x="56" y="452" font-family="Consolas, 'Courier New', monospace" font-size="19" fill="#FBBF24">github.com/kael-odin/odin-valhalla</text>
 </svg>

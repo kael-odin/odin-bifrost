@@ -44,7 +44,7 @@ export const careersData: CareerEntry[] = [
       {
         name: "My OS Homepage",
         image: "/projects/cover-my-os.svg",
-        link: "https://kael-odin.github.io/my-os-homepage/",
+        link: "https://kael-odin.github.io/odin-heim/",
       },
       {
         name: "Prompts Chat 中文站",
