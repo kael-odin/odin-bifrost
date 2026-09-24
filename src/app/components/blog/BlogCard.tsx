@@ -1,5 +1,6 @@
 import Link from "next/link";
 import { BlogPost } from "@/lib/blog-data";
+import { withBasePath } from "@/lib/base-path";
 
 function formatDate(value?: string) {
   if (!value) return "";
@@ -31,7 +32,7 @@ export default function BlogCard({ blog, onOpenDetails }: BlogCardProps) {
           // eslint-disable-next-line @next/next/no-img-element
           <img
             className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
-            src={blog.posterUrl}
+            src={withBasePath(blog.posterUrl)}
             alt={blog.headding || "文章封面"}
           />
         ) : null}

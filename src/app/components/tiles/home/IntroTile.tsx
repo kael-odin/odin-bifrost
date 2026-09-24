@@ -2,6 +2,7 @@
 
 import Image from "next/image";
 import { useEffect, useMemo, useState } from "react";
+import { withBasePath } from "@/lib/base-path";
 // components/tiles/home/IntroTile.tsx
 export default function IntroTile() {
     const [activeBubble, setActiveBubble] = useState(0);
@@ -57,7 +58,7 @@ export default function IntroTile() {
         <div className="flex flex-col justify-center h-full px-10 lg:px-16 bg-white dark:bg-[#0d1117] rounded-4xl dark:ring-2 dark:ring-gray-700">
             <div className="flex items-center gap-3 mb-2">
                 <div className="relative w-24 h-24 animate-float-y">
-                    <Image src="/avatar/avatar-wave.svg" alt="汤勇的卡通头像（挥手打招呼）" width={96} height={96} className="rounded-full" priority />
+                    <Image src={withBasePath("/avatar/avatar-wave.svg")} alt="汤勇的卡通头像（挥手打招呼）" width={96} height={96} className="rounded-full" priority />
                 </div>
                 <div className="-ml-2 -mt-7 min-h-[60px]" aria-live="polite" aria-label="Greeting chat">
                     <div
@@ -85,7 +86,7 @@ export default function IntroTile() {
                 <span className="relative inline-block whitespace-nowrap z-10 font-bold text-gray-800 dark:text-gray-100">
                     <span className="relative z-20 font-decorative text-[20px]">汤勇 Kael Odin</span>
                     <img
-                        src="/line-1.svg"
+                        src={withBasePath("/line-1.svg")}
                         alt=""
                         aria-hidden
                         className="absolute left-0 bottom-[-7px] -z-10 w-full aspect-[977/88] pointer-events-none"

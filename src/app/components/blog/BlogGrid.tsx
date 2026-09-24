@@ -4,6 +4,7 @@ import BlogCard from "@/components/blog/BlogCard";
 import { BlogPost } from "@/lib/blog-data";
 import { useEffect, useState } from "react";
 import { createPortal } from "react-dom";
+import { withBasePath } from "@/lib/base-path";
 
 function formatDate(value?: string) {
   if (!value) return "";
@@ -73,7 +74,7 @@ export default function BlogGrid({ items }: { items: BlogPost[] }) {
                   {selectedBlog.posterUrl ? (
                     // eslint-disable-next-line @next/next/no-img-element
                     <img
-                      src={selectedBlog.posterUrl}
+                      src={withBasePath(selectedBlog.posterUrl)}
                       alt={selectedBlog.headding || "文章封面"}
                       className="h-full w-full object-cover"
                     />

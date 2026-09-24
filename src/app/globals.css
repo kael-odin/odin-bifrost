@@ -12,7 +12,7 @@
 
 /* 自托管光标（替换原作者的 Cloudinary 外链，Safari 不支持时回退系统箭头） */
 * {
-  cursor: url("/cursor.svg") 2 2, auto;
+  cursor: var(--site-cursor, auto);
 }
 
 .cursor-grab,

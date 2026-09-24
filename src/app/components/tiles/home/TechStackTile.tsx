@@ -1,5 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
+import { withBasePath } from "@/lib/base-path";
 
 const ICON_CARDS = [
     { name: "TypeScript", src: "/tech/typescript.svg", card: "w-24 h-24", icon: "w-15 h-15", pos: "top-[-2%] left-[46%]", rot: "-rotate-[13deg]", z: "z-30" },
@@ -19,7 +20,7 @@ export default function TechStackTile() {
         <div className="w-full h-full relative overflow-hidden rounded-4xl bg-white dark:bg-[#0d1117] dark:ring-2 dark:ring-gray-700">
             <div
                 className="absolute inset-0 bg-white bg-repeat opacity-80 dark:bg-[#0d1117] dark:bg-none dark:opacity-100"
-                style={{ backgroundImage: "url('/Topographic.svg')", backgroundSize: "260px 260px" }}
+                style={{ backgroundImage: `url('${withBasePath("/Topographic.svg")}')`, backgroundSize: "260px 260px" }}
             />
 
             {ICON_CARDS.map((item, index) => (
@@ -29,7 +30,7 @@ export default function TechStackTile() {
                     style={{ animationDelay: `${index * 420}ms`, animationDuration: `${4 + (index % 4) * 0.7}s` }}
                 >
                     <div className={`relative ${item.icon} h-auto aspect-square`}>
-                        <Image src={item.src} alt={item.name} fill className="object-contain" />
+                        <Image src={withBasePath(item.src)} alt={item.name} fill className="object-contain" />
                     </div>
                 </div>
             ))}

@@ -43,7 +43,7 @@ export const projectsData = [
       "个人博客与笔记：技术、项目、随笔。Next.js + Markdown，记录踩坑与思考。",
     image: "/projects/cover-blog.svg",
     github: "https://github.com/kael-odin/odin-saga",
-    view: "https://kael-odin-blog.vercel.app",
+    view: "https://odin-saga.vercel.app",
     workStatus: true,
     date: "2026 · 03",
     demo: false,

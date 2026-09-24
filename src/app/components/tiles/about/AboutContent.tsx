@@ -16,6 +16,7 @@ import Image from "next/image";
 import styled, { keyframes } from "styled-components";
 import { siteConfig } from "@/site-config";
 import { careersData, type CareerEntry, type CareerProject } from "@/components/tiles/about/careers";
+import { withBasePath } from "@/lib/base-path";
 
 const spinGlow = keyframes`
   from { transform: translate(-50%, -50%) rotate(0deg); }
@@ -149,7 +150,7 @@ export default function AboutContent() {
               <div className="flex items-center gap-6 mb-3">
                 <div className="relative w-24 h-24 shrink-0 animate-float-y">
                   <Image
-                    src="/avatar/avatar-pop.svg"
+                    src={withBasePath("/avatar/avatar-pop.svg")}
                     alt="汤勇 Kael Odin 的卡通头像（探头打招呼）"
                     width={100}
                     height={100}
@@ -186,7 +187,7 @@ export default function AboutContent() {
                           <div className="flex items-start gap-3 min-w-0">
                             <div className="relative h-11 w-11 shrink-0 overflow-hidden rounded-2xl border border-dashed border-gray-300 bg-gray-50 dark:border-gray-600 dark:bg-[#0d1117]">
                               <Image
-                                src={item.logo}
+                                src={withBasePath(item.logo)}
                                 alt={`${item.company} logo`}
                                 fill
                                 className="object-cover"
@@ -317,7 +318,7 @@ export default function AboutContent() {
               <div className="flex items-center gap-3 min-w-0">
                 <div className="relative h-11 w-11 shrink-0 overflow-hidden rounded-2xl border border-gray-300 bg-white dark:border-gray-600 dark:bg-[#111821]">
                   <Image
-                    src={selectedCareer.logo}
+                    src={withBasePath(selectedCareer.logo)}
                     alt={`${selectedCareer.company} logo`}
                     fill
                     className="object-cover"
@@ -365,7 +366,7 @@ export default function AboutContent() {
                     >
                       <div className="relative h-28 w-full">
                         <Image
-                          src={project.image}
+                          src={withBasePath(project.image)}
                           alt={project.name}
                           fill
                           className="object-cover"
@@ -400,7 +401,7 @@ export default function AboutContent() {
                       title={skill.name}
                     >
                       <Image
-                        src={skill.icon}
+                        src={withBasePath(skill.icon)}
                         alt={skill.name}
                         width={22}
                         height={22}
@@ -443,7 +444,7 @@ export default function AboutContent() {
             <div className="relative overflow-hidden rounded-2xl border border-gray-200 bg-[#f8fafc] dark:border-gray-700 dark:bg-[#111821]">
               <div className="relative h-[48vh] w-full sm:h-[56vh]">
                 <Image
-                  src={projectCarousel.projects[projectCarousel.index]?.image}
+                  src={withBasePath(projectCarousel.projects[projectCarousel.index]?.image ?? "")}
                   alt={projectCarousel.projects[projectCarousel.index]?.name}
                   fill
                   className="object-contain"
@@ -548,7 +549,7 @@ export default function AboutContent() {
                           <div className="flex items-start gap-3 min-w-0">
                             <div className="relative h-11 w-11 shrink-0 overflow-hidden rounded-2xl border border-dashed border-gray-300 bg-gray-50 dark:border-gray-600 dark:bg-[#0d1117]">
                               <Image
-                                src={item.logo}
+                                src={withBasePath(item.logo)}
                                 alt={`${item.company} logo`}
                                 fill
                                 className="object-cover"

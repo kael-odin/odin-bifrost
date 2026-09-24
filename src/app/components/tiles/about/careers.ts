@@ -84,7 +84,7 @@ export const careersData: CareerEntry[] = [
       {
         name: "Kael's Blog",
         image: "/projects/cover-blog.svg",
-        link: "https://kael-odin-blog.vercel.app",
+        link: "https://odin-saga.vercel.app",
       },
       {
         name: "Free Proxy List",

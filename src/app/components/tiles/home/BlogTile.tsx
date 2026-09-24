@@ -1,6 +1,7 @@
 "use client";
 
 import React from "react";
+import { withBasePath } from "@/lib/base-path";
 
 const BlogTile = () => {
   return (
@@ -119,7 +120,7 @@ const BlogTile = () => {
       <button 
         onClick={(e) => {
           e.preventDefault();
-          window.location.href = "/blog";
+          window.location.href = withBasePath("/blog/");
         }}
         onPointerDown={(e) => e.stopPropagation()}
         onMouseDown={(e) => e.stopPropagation()}

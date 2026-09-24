@@ -3,6 +3,7 @@
 import Image from "next/image";
 import MapComponent from "./MapComponent";
 import { amapUrl, siteConfig } from "@/site-config";
+import { withBasePath } from "@/lib/base-path";
 
 export default function MapTile() {
     return (
@@ -29,7 +30,7 @@ export default function MapTile() {
             <div className="absolute bottom-4 right-4 z-30 pointer-events-none">
                 <div className="pointer-events-auto relative w-[84px] h-[84px] rounded-full bg-cyan-400/50 border border-cyan-300/70 shadow-[0_10px_30px_rgba(14,165,233,0.35)] flex items-center justify-center transition-transform duration-300 ease-out group-hover:rotate-[-10deg] group-hover:scale-105">
                     <Image
-                        src="/avatar/avatar-pin.svg"
+                        src={withBasePath("/avatar/avatar-pin.svg")}
                         alt="汤勇 Kael Odin 的卡通头像（站在定位点）"
                         width={64}
                         height={64}

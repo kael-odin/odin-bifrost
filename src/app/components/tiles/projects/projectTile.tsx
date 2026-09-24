@@ -1,5 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
+import { withBasePath } from "@/lib/base-path";
 
 interface Project {
     name: string;
@@ -19,14 +20,14 @@ export default function ProjectTile({ project }: { project: Project }) {
     // Ensure image src is a valid path or fallback
     let imageSrc = project.image;
     if (!imageSrc || typeof imageSrc !== "string" || (!imageSrc.startsWith("/") && !imageSrc.startsWith("http"))) {
-        imageSrc = "/tech/placeholder.svg";
+        imageSrc = withBasePath("/tech/placeholder.svg");
     }
     return (
         <div className="group flex flex-col h-full">
             <div className="flex flex-col md:flex-row w-full p-6 md:p-8 gap-4 items-center md:items-start overflow-hidden flex-1">
                 {/* 1. Project Preview Image Placeholder */}
                 <div className="w-full md:w-1/2 h-48 md:h-full bg-gray-50 dark:bg-gray-800 rounded-2xl border border-gray-100 dark:border-gray-700 flex items-center justify-center shrink-0 overflow-hidden">
-                    <Image src={imageSrc} alt={project.name} width={400} height={300} className="object-cover rounded-2xl transition-transform duration-500 ease-out group-hover:scale-[1.04]" />
+                    <Image src={withBasePath(imageSrc)} alt={project.name} width={400} height={300} className="object-cover rounded-2xl transition-transform duration-500 ease-out group-hover:scale-[1.04]" />
                 </div>
                 {/* 2. Content Section */}
                 <div className="flex flex-col justify-between w-full">
@@ -47,7 +48,7 @@ export default function ProjectTile({ project }: { project: Project }) {
                                     className="relative inline-flex h-6 w-6 items-center justify-center rounded-lg bg-white ring-1 ring-black/5 dark:ring-white/10"
                                 >
                                     <Image
-                                        src={tech.image || "/tech/placeholder.svg"}
+                                        src={withBasePath(tech.image || "/tech/placeholder.svg")}
                                         alt={tech.name}
                                         width={16}
                                         height={16}
@@ -66,13 +67,13 @@ export default function ProjectTile({ project }: { project: Project }) {
                     {project.view && typeof project.view === "string" && (
                         <Link href={project.view} target="_blank" rel="noopener noreferrer">
                             <div className="w-10 h-10 bg-gray-200 dark:bg-gray-700 rounded-full flex items-center justify-center cursor-pointer hover:bg-gray-300 dark:hover:bg-gray-600 transition-colors hover:ring-4 ring-gray-200 dark:ring-gray-400 hover:transition duration-700 ease-in-out">
-                                <Image src="/arrow.svg" alt="查看项目" width={20} height={20} />
+                                <Image src={withBasePath("/arrow.svg")} alt="查看项目" width={20} height={20} />
                             </div>
                         </Link>
                     )}
                     {project.github && typeof project.github === "string" && (
                         <Link href={project.github} className="w-10 h-10 rounded-full flex items-center justify-center cursor-pointer bg-white dark:bg-gray-700 hover:bg-gray-300 dark:hover:bg-gray-600 transition-colors" target="_blank" rel="noopener noreferrer">
-                            <Image src="/github.svg" alt="GitHub" width={35} height={35} /> {/* View Icon Placeholder */}
+                            <Image src={withBasePath("/github.svg")} alt="GitHub" width={35} height={35} /> {/* View Icon Placeholder */}
                         </Link>
                     )}
                 </div>
