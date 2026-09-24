@@ -53,20 +53,20 @@ const GlowBorder = styled.div`
   filter: blur(4px);
 `;
 
-// TODO: 技能标签按你的实际情况增删
-const skills = ["全栈开发", "TypeScript", "Python", "AI 工具链", "开源爱好者"];
+// 技能标签（对齐简历）
+const skills = ["测试工程", "Python", "Playwright", "Postman", "llama.cpp", "FastGPT / RAG", "AI 工具链", "开源"];
 
-// TODO: 教育背景为占位示例，请改成你的真实经历
+// 教育背景（对齐简历）
 const education = [
   {
-    degree: "计算机科学与技术（本科）",
-    institute: "中国矿业大学",
-    period: "在读",
+    degree: "智能科学与技术（人工智能方向）· 工学学士",
+    institute: "江苏大学 · 江苏镇江",
+    period: "2020.09 - 2025.06",
   },
   {
-    degree: "高中",
-    institute: "江苏 徐州",
-    period: "毕业",
+    degree: "理科试验班（竺可桢学院）· 肄业后重新高考",
+    institute: "浙江大学 · 浙江杭州",
+    period: "2017.09 - 2019.06",
   },
 ];
 
@@ -150,7 +150,7 @@ export default function AboutContent() {
               <div className="flex items-center gap-6 mb-3">
                 <div className="relative w-24 h-24 shrink-0 animate-float-y">
                   <Image
-                    src={withBasePath("/avatar/avatar-pop.svg")}
+                    src={withBasePath("/avatar/avatar-pop.png")}
                     alt="汤勇 Kael Odin 的卡通头像（探头打招呼）"
                     width={100}
                     height={100}
@@ -160,8 +160,9 @@ export default function AboutContent() {
               </div>
               <p className="mt-3 text-gray-500 dark:text-gray-300 text-xs leading-relaxed sm:text-sm md:text-base max-w-[900px]">
                 你好，我是<span className="font-bold text-gray-800 dark:text-gray-100">汤勇（Kael Odin）</span>，
-                一名来自江苏徐州的开发者。我喜欢把想法快速做成能用的产品：OS 风格的个人主页模板、2200+ 提示词的中文镜像站、学术论文科研 Skill 每日榜单，
-                还有本地大模型与 Agent 工具链的各种折腾。相信「先跑通，再讲清楚」，也相信持续输出的小项目比宏大的计划更有力量。
+                一名来自江苏徐州的 AI 应用工程师 / 测试工程师。工作里负责三条代理与数据采集产品线的测试全流程，推动大模型私有化部署与企业知识库落地；
+                业余把想法快速做成能用的开源产品：OS 风格的个人主页模板、2200+ 提示词的中文镜像站、学术论文科研 Skill 每日榜单。
+                相信「先跑通，再讲清楚」，也相信持续输出的小项目比宏大的计划更有力量。
               </p>
 
               <div className="mt-4 flex flex-wrap gap-2.5">

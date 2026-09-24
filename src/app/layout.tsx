@@ -38,6 +38,8 @@ const siteOrigin = new URL(siteUrl).origin;
 
 export const metadata: Metadata = {
   metadataBase: new URL(siteOrigin),
+  // 权威地址固定指向 GitHub Pages 版本，避免 Pages/Vercel 双部署被重复收录
+  alternates: { canonical: "https://kael-odin.github.io/odin-bifrost/" },
   title: siteConfig.title,
   description: siteConfig.description,
   keywords: ["汤勇", "Kael Odin", "个人作品集", "开发者", "全栈", "AI 工具", "徐州"],

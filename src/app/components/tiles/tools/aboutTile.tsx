@@ -8,14 +8,14 @@ export default function aboutTile() {
                 {/* 默认是敲键盘，悬停变成 AI 星火 */}
                 <div className="relative w-24 h-24">
                     <Image
-                        src={withBasePath("/avatar/avatar-laptop.svg")}
+                        src={withBasePath("/avatar/avatar-laptop.png")}
                         alt="汤勇的头像（敲键盘）"
                         width={100}
                         height={100}
                         className="absolute inset-0 transition-opacity duration-500 opacity-100 group-hover:opacity-0"
                     />
                     <Image
-                        src={withBasePath("/avatar/avatar-spark.svg")}
+                        src={withBasePath("/avatar/avatar-spark.png")}
                         alt="汤勇的头像（AI 灵感）"
                         width={100}
                         height={100}

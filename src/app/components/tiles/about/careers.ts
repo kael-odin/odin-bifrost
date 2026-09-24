@@ -24,17 +24,54 @@ export type CareerEntry = {
 };
 
 /**
- * 职业经历数据。
- * TODO: 这里目前展示的是开源/独立开发经历，如有正式工作经历，直接替换数组内容即可。
+ * 职业经历数据（按时间倒序）。
  */
 export const careersData: CareerEntry[] = [
+  {
+    id: "lingjiang-qa",
+    role: "测试工程师",
+    company: "徐州灵匠信息科技有限公司",
+    period: "2025.11 - 至今",
+    badge: "进行中",
+    current: true,
+    logo: "/company/kael-lab.svg",
+    overview:
+      "负责 Thordata（企业级代理与数据采集服务，对标 Bright Data）、CoreClaw（网页数据采集平台，对标 Apify）、XSpark（静态 ISP 代理）三条产品线的功能测试全流程：需求评审 → 用例设计 → 执行 → 缺陷跟踪 → 回归验证，累计发现并推动修复缺陷 300+。",
+    myRole:
+      "针对代理与采集业务设计专项测试：IP 连通率与响应延迟、会话保持与轮换正确性、采集任务成功率与数据交付准确性、HTTP(S)/SOCKS5 多协议兼容。结合接口测试（Postman + 抓包分析）、Web UI 自动化（Playwright + pytest）与 SQL 数据核对，沉淀可复用用例与脚本；同时推动企业 AI 落地（llama.cpp 私有化部署 + FastGPT 知识库 + 模型选型评测），为同事提供常态化的 AI 配置与疑难支持。",
+    projects: [
+      {
+        name: "Thordata · 代理与数据采集",
+        image: "/projects/cover-blog.svg",
+        link: "https://www.thordata.com/",
+      },
+      {
+        name: "CoreClaw · 网页数据采集平台",
+        image: "/projects/cover-prompts-zh.svg",
+      },
+      {
+        name: "XSpark · 静态 ISP 代理",
+        image: "/projects/cover-proxy-list.svg",
+      },
+    ],
+    skills: [
+      { name: "Playwright", icon: "/tech/python-original.svg" },
+      { name: "Postman", icon: "/tech/typescript.svg" },
+      { name: "Python", icon: "/tech/python-original.svg" },
+      { name: "SQL", icon: "/tech/markdown-original.svg" },
+      { name: "llama.cpp", icon: "/tech/ollama.svg" },
+      { name: "FastGPT", icon: "/tech/openai.svg" },
+      { name: "Linux", icon: "/tech/linux.svg" },
+      { name: "Charles", icon: "/tech/git-original.svg" },
+    ],
+  },
   {
     id: "kael-lab",
     role: "独立开发者",
     company: "Kael Odin Lab · 个人开源工作室",
-    period: "2025 年 - 至今",
-    badge: "进行中",
-    current: true,
+    period: "2025 年 - 至今（业余）",
+    badge: "持续输出",
+    current: false,
     logo: "/company/kael-lab.svg",
     overview:
       "利用业余时间持续构建和维护开源项目：从 OS 风格互动主页模板、2200+ 提示词中文镜像站，到学术论文科研 Skill 每日排行榜。项目全部托管在 GitHub，站点部署在 GitHub Pages / Vercel。",

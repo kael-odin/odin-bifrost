@@ -58,7 +58,7 @@ export default function IntroTile() {
         <div className="flex flex-col justify-center h-full px-10 lg:px-16 bg-white dark:bg-[#0d1117] rounded-4xl dark:ring-2 dark:ring-gray-700">
             <div className="flex items-center gap-3 mb-2">
                 <div className="relative w-24 h-24 animate-float-y">
-                    <Image src={withBasePath("/avatar/avatar-wave.svg")} alt="汤勇的卡通头像（挥手打招呼）" width={96} height={96} className="rounded-full" priority />
+                    <Image src={withBasePath("/avatar/avatar-wave.png")} alt="汤勇的卡通头像（挥手打招呼）" width={96} height={96} className="rounded-full" priority />
                 </div>
                 <div className="-ml-2 -mt-7 min-h-[60px]" aria-live="polite" aria-label="Greeting chat">
                     <div
@@ -92,10 +92,10 @@ export default function IntroTile() {
                         className="absolute left-0 bottom-[-7px] -z-10 w-full aspect-[977/88] pointer-events-none"
                     />
                 </span>
-                ，一名来自江苏徐州的软件开发者。
+                ，一名来自江苏徐州的 AI 应用工程师 / 测试工程师。
             </h1>
             <p className="mt-1 text-gray-500 dark:text-gray-400 text-base leading-relaxed max-w-[500px]">
-                喜欢折腾 Web 应用、AI 工具和自动化流水线，把一个个想法做成真正能用得上的东西。目前在持续开源中，欢迎逛逛我的 GitHub。
+                白天做测试工程与 AI 落地（llama.cpp 私有化部署、FastGPT 知识库），业余把想法做成开源工具与自动化流水线。欢迎逛逛我的 GitHub。
             </p>
         </div>
     );
