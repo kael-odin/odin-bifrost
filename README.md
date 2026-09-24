@@ -1,110 +1,71 @@
-# 汤勇 Kael Odin · 个人作品集
+<p align="center">
+  <img src="./assets/readme/hero.svg" width="100%" alt="ODIN BIFROST —— 彩虹桥·个人作品集主站，Bento 网格数字客厅">
+</p>
 
-基于 **Next.js 16（App Router）+ TypeScript** 的 Bento 网格风格个人主页，纯静态导出，部署在 GitHub Pages。
+<p align="center">
+  <a href="https://kael-odin.github.io/odin-bifrost/"><img src="https://img.shields.io/badge/%E5%9C%A8%E7%BA%BF%E8%AE%BF%E9%97%AE-kael--odin.github.io-5EEAD4?style=flat-square" alt="在线访问"></a>
+  <a href="https://github.com/kael-odin/odin-bifrost/actions/workflows/deploy-pages.yml"><img src="https://github.com/kael-odin/odin-bifrost/actions/workflows/deploy-pages.yml/badge.svg?style=flat-square" alt="Deploy Pages"></a>
+  <img src="https://img.shields.io/badge/Next.js-16-black?style=flat-square" alt="Next.js 16">
+  <img src="https://img.shields.io/badge/TypeScript-strict-3178c6?style=flat-square" alt="TypeScript strict">
+  <img src="https://img.shields.io/badge/Tailwind_CSS-v4-06b6d4?style=flat-square" alt="Tailwind CSS v4">
+</p>
 
-线上地址：<https://kael-odin.github.io/odin-bifrost/>
+## ✨ 这是什么
 
----
+汤勇 Kael Odin 的个人作品集主站：**Next.js 16（App Router）+ TypeScript** 的 Bento 网格主页，纯静态导出、零服务端。首页是一面可拖拽换位的卡片墙，卡片带「光随鼠标」动效（光标追踪光斑 + 边缘辉光），项目 / 工具 / 博客 / 关于各成一页。
 
-## 快速开始
+**线上地址**：<https://kael-odin.github.io/odin-bifrost/>
+
+## 🚀 快速开始
 
 ```bash
 npm install
 npm run dev          # 本地开发，http://localhost:3000
 npm run build        # 静态导出，产物在 out/
-npm run preview      # 本地预览 out/ 目录
+npm run preview      # 本地预览构建产物
 ```
 
----
+要求 Node.js ≥ 20（Next.js 16 要求）。
 
-## 改成你自己的
+## 🎨 改成你自己的
 
-**几乎所有个人相关的信息都集中在一个文件里**：`src/app/site-config.ts`
-
-```ts
-export const siteConfig = {
-  nameZh: "汤勇",
-  nameEn: "Kael Odin",
-  title: "汤勇 Kael Odin | 个人作品集",
-  email: "445481611@qq.com",
-  qq: "445481611",
-  wechat: "kael_odin",
-  github: "https://github.com/kael-odin",
-  location: {
-    short: "中国 · 江苏 · 徐州",
-    full: "江苏省徐州市泉山区矿大科技园",
-    lat: 34.2270694,
-    lng: 117.1900111,
-    zoom: 16,
-  },
-};
-```
+几乎所有个人信息集中在 **`src/app/site-config.ts`** 一个文件里：
 
 | 想改什么 | 改哪里 |
 | --- | --- |
 | 姓名、QQ、微信、邮箱、GitHub | `src/app/site-config.ts` |
-| 地图定位 | `src/app/site-config.ts` 里的 `location.lat` / `lng` / `zoom` |
-| 博客文章 | `src/app/lib/blog-data.ts` 的 `blogPosts` 数组（封面放 `public/blog/`） |
+| 地图定位 | `site-config.ts` 的 `location.lat / lng / zoom` |
+| 博客文章 | `src/app/lib/blog-data.ts` 的 `blogPosts`（封面放 `public/blog/`） |
 | 项目列表 | `src/app/components/tiles/projects/projects.ts`（封面用 `assets-src/build-covers.mjs` 生成） |
 | 工具列表 | `src/app/components/tiles/tools/tools.ts` |
-| 工作经历 / 教育背景 | `src/app/components/tiles/about/careers.ts` 与 `AboutContent.tsx` 里的 `education` |
+| 经历 / 教育 | `tiles/about/careers.ts` 与 `AboutContent.tsx` |
 | 首页卡片顺序 / 尺寸 | `src/app/home/page.tsx` 的 `TILE_CONFIG` |
-| 头像 | `assets-src/avatar-base.svg` 母版 → 跑 `node assets-src/build-avatars.mjs` |
-| Logo / favicon / OG 分享图 | `assets-src/icon.svg` → 跑 `node scripts/generate-brand-assets.mjs` |
+| 头像 / Logo / OG 图 | `assets-src/*.svg` 母版 → `node assets-src/build-avatars.mjs`、`node scripts/generate-brand-assets.mjs` |
 
-> 首页卡片支持拖拽换位，顺序不会被保存，刷新后回到 `TILE_CONFIG` 的默认顺序。
->
-> **待办提醒**：`AboutContent.tsx` 里的教育背景（中国矿业大学等）目前是占位示例，记得替换成真实信息。
+> 首页卡片支持拖拽换位，刷新后回到 `TILE_CONFIG` 默认顺序。
+> **待办提醒**：`AboutContent.tsx` 里的教育背景目前是占位示例，记得替换。
 
----
+## 🌐 部署
 
-## 部署
+推送 `main` 自动触发 `.github/workflows/deploy-pages.yml` 发布到 GitHub Pages（子路径 `/odin-bifrost/`，basePath 已内置）。导入 Vercel / Netlify 也可直接用——构建配置会自动切换为根路径部署。
 
-推送到 `main` 分支会自动触发 `.github/workflows/deploy-pages.yml`，构建并发布到 GitHub Pages。
+## 🧭 Odin 系列
 
-也可以在仓库 **Settings → Pages → Build and deployment** 里把 Source 设为 **GitHub Actions**（首次部署时确认一下即可）。
+| 符 | 仓库 | 定位 | 访问 |
+| --- | --- | --- | --- |
+| 🌈 | **odin-bifrost** | 个人作品集主站（Next.js Bento） | 这里 |
+| ⚡ | [odin-valhalla](https://github.com/kael-odin/odin-valhalla) | 深色作品集模板（React + Vite） | [live](https://kael-odin.github.io/odin-valhalla/) |
+| 🗿 | [odin-runestone](https://github.com/kael-odin/odin-runestone) | 双语作品集模板（Vite + GSAP） | [live](https://kael-odin.github.io/odin-runestone/) |
+| 📜 | [odin-saga](https://github.com/kael-odin/odin-saga) | 博客与数字花园（Next.js） | [live](https://odin-saga.vercel.app/) |
+| 🏠 | [odin-heim](https://github.com/kael-odin/odin-heim) | OS 风互动主页模板（Vite） | [live](https://kael-odin.github.io/odin-heim/) |
 
----
+> 同一套北欧神话命名 `odin-<词根>`，词根即职能：彩虹桥是入口，英灵殿陈列功绩，卢恩石碑刻生平，萨迦记事，heim 是家。
 
-## 目录结构
+## 📄 许可与致谢
 
-```
-src/app/
-├── site-config.ts           # 个人配置（改这个就够）
-├── layout.tsx               # 全局布局、字体、SEO 元信息
-├── globals.css              # 全局样式
-├── page.tsx                 # 根路径，重定向到 /home
-├── home/                    # 首页 Bento 网格
-├── about/                   # 关于
-├── tools/                   # 工具
-├── projects/                # 项目
-├── blog/                    # 博客
-├── components/
-│   ├── HomeNav.tsx          # 顶部导航
-│   ├── ContactModal.tsx     # 联系方式弹窗
-│   ├── tiles/home/          # 首页各张卡片
-│   ├── tiles/about/         # 关于页内容
-│   ├── tiles/projects/      # 项目数据与卡片
-│   └── tiles/tools/         # 工具数据与卡片
-└── lib/blog-data.ts         # 博客数据源
-
-public/                      # 静态资源（图片、图标、SVG）
-```
-
----
-
-## 技术栈
-
-- **框架**：Next.js 16（App Router）+ TypeScript
-- **样式**：Tailwind CSS v4 + Styled-components
-- **图标**：React Icons
-- **拖拽**：`@dnd-kit`
-- **地图**：Google Maps iframe 嵌入（无需 API Key）
-
----
-
-## 说明
-
-- 本项目是静态站点（`output: "export"`），**没有服务端**。原模板里的联系表单、评价提交、Contentful CMS 都依赖服务端接口，已移除，改为本地静态数据 + 直接展示 QQ / 微信联系方式。
-- 模板来源：[Akshayp2002/next-portfolio-new](https://github.com/Akshayp2002/next-portfolio-new)（MIT License），在此基础上深度改造：中文优先、全新品牌视觉（K 徽标 + 手绘 SVG 卡通头像）、CSS 实景卡片（手机 / 浏览器窗口组合）、「光随鼠标」动效（光标追踪光斑 + 边缘辉光 + 级联入场）。
+- 模板来源：[Akshayp2002/next-portfolio-new](https://github.com/Akshayp2002/next-portfolio-new)（MIT），在其基础上深度改造：中文优先、K 徽标 + 手绘 SVG 头像品牌、CSS 实景展示卡、「光随鼠标」动效体系。
 - 技术图标来自 [devicon](https://github.com/devicons/devicon)（MIT）与模板自带资源。
+
+---
+
+<p align="center"><sub><b>ODIN SERIES</b> · bifrost / valhalla / runestone / saga / heim · crafted by <a href="https://github.com/kael-odin">Kael Odin</a></sub></p>

@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="320" viewBox="0 0 1200 320" role="img" aria-labelledby="t d">
+  <title id="t">ODIN BIFROST</title>
+  <desc id="d">Odin 系列 BIFROST —— 彩虹桥 · 个人作品集主站，Bento 网格数字客厅</desc>
+  <rect width="1200" height="320" rx="26" fill="#0B0F1A"/>
+  <g transform="translate(56 54)">
+    <rect width="36" height="36" rx="9" fill="#5EEAD4" fill-opacity="0.13" stroke="#5EEAD4" stroke-opacity="0.55"/>
+    <path d="M8,3 L8,21 M8,4 L17,8.5 L8,13 M8,13 L17,17.5 L8,21" transform="translate(6 6)" fill="none" stroke="#5EEAD4" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/>
+  </g>
+  <text x="104" y="78" font-family="ui-monospace, SFMono-Regular, Menlo, &quot;Consolas&quot;, monospace" font-size="17" letter-spacing="2.5" fill="#8B9BB4">ODIN SERIES · 01 / 05 · GITHUB PAGES</text>
+  <text x="56" y="156" font-family="-apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, &quot;PingFang SC&quot;, &quot;Microsoft YaHei&quot;, sans-serif" font-size="54" font-weight="800" letter-spacing="1"><tspan fill="#F1F5F9">ODIN </tspan><tspan fill="#5EEAD4">BIFROST</tspan></text>
+  <text x="56" y="200" font-family="-apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, &quot;PingFang SC&quot;, &quot;Microsoft YaHei&quot;, sans-serif" font-size="25" font-weight="600" fill="#D7DEE8">彩虹桥 · 个人作品集主站，Bento 网格数字客厅</text>
+  <text x="56" y="236" font-family="-apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, &quot;PingFang SC&quot;, &quot;Microsoft YaHei&quot;, sans-serif" font-size="19" fill="#8B9BB4">Next.js · TypeScript · Tailwind CSS v4 · 静态导出</text>
+  <text x="56" y="276" font-family="ui-monospace, SFMono-Regular, Menlo, &quot;Consolas&quot;, monospace" font-size="17" fill="#5F6F8C">github.com/kael-odin/odin-bifrost</text>
+  <g transform="translate(770 44)">
+    <rect width="374" height="232" rx="14" fill="#131A2B" stroke="#26334D"/>
+    <clipPath id="pclip"><rect width="374" height="232" rx="14"/></clipPath><g clip-path="url(#pclip)"><path d="M -12 250 Q 187 -46 386 60" fill="none" stroke="#5EEAD4" stroke-width="3" stroke-opacity="0.30"/><path d="M -12 250 Q 187 -46 386 88" fill="none" stroke="#38BDF8" stroke-width="3" stroke-opacity="0.30"/><path d="M -12 250 Q 187 -46 386 116" fill="none" stroke="#A78BFA" stroke-width="3" stroke-opacity="0.30"/><path d="M -12 250 Q 187 -46 386 144" fill="none" stroke="#FBBF24" stroke-width="3" stroke-opacity="0.30"/><rect x="24" y="24" width="104" height="84" rx="10" fill="#1A2336" fill-opacity="1" stroke="#26334D" stroke-opacity="1"/><rect x="140" y="24" width="104" height="84" rx="10" fill="#5EEAD4" fill-opacity="0.14" stroke="#5EEAD4" stroke-opacity="0.7"/><rect x="256" y="24" width="104" height="84" rx="10" fill="#1A2336" fill-opacity="1" stroke="#26334D" stroke-opacity="1"/><rect x="24" y="124" width="104" height="84" rx="10" fill="#1A2336" fill-opacity="1" stroke="#26334D" stroke-opacity="1"/><rect x="140" y="124" width="104" height="84" rx="10" fill="#1A2336" fill-opacity="1" stroke="#26334D" stroke-opacity="1"/><rect x="256" y="124" width="104" height="84" rx="10" fill="#1A2336" fill-opacity="1" stroke="#26334D" stroke-opacity="1"/><text x="192" y="80" text-anchor="middle" font-family="-apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, &quot;PingFang SC&quot;, &quot;Microsoft YaHei&quot;, sans-serif" font-size="30" font-weight="800" fill="#5EEAD4">K</text><circle cx="40" cy="166" r="4.5" fill="#5EEAD4" fill-opacity="0.95"/><circle cx="56" cy="166" r="4.5" fill="#8B9BB4" fill-opacity="0.45"/><circle cx="72" cy="166" r="4.5" fill="#8B9BB4" fill-opacity="0.45"/></g>
+    <text x="18" y="219" font-family="ui-monospace, SFMono-Regular, Menlo, &quot;Consolas&quot;, monospace" font-size="16" fill="#5F6F8C" letter-spacing="1">bento grid</text>
+  </g>
+</svg>
