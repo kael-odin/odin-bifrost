@@ -117,4 +117,22 @@ export const toolsData = [
     link: "https://www.markdownguide.org/",
     image: "/tech/markdown-original.svg",
   },
+  {
+    name: "GitHub Actions",
+    description: "自动化流水线发动机：学术 Skill 榜单、提示词镜像的每日更新都跑在它上面。",
+    link: "https://github.com/features/actions",
+    image: "/tech/github.svg",
+  },
+  {
+    name: "JavaScript",
+    description: "快速验证想法的第一脚本语言，榜单流水线和镜像站全靠它。",
+    link: "https://developer.mozilla.org/docs/Web/JavaScript",
+    image: "/tech/js.svg",
+  },
+  {
+    name: "CSS3",
+    description: "样式基本功：从主题变量到暗色模式适配，作品集的全部皮囊。",
+    link: "https://developer.mozilla.org/docs/Web/CSS",
+    image: "/tech/css3.svg",
+  },
 ];

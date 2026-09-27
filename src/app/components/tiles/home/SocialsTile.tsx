@@ -2,7 +2,7 @@
 
 import { useEffect, useState } from "react";
 import { FaQq, FaWeixin } from "react-icons/fa6";
-import { qqChatUrl, siteConfig } from "@/site-config";
+import { siteConfig } from "@/site-config";
 import { copyText } from "@/lib/copy-text";
 
 type SocialSlide = {
@@ -20,10 +20,10 @@ const SLIDES: SocialSlide[] = [
 	{
 		id: "qq",
 		name: "QQ",
-		hint: "点击发起会话",
+		hint: "点击复制 QQ 号",
 		bgClass: "bg-gradient-to-br from-[#38bdf8] to-[#2563eb]",
 		glowClass: "bg-white/25",
-		href: qqChatUrl,
+		href: undefined,
 	},
 	{
 		id: "wechat",
