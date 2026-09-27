@@ -11,7 +11,7 @@ export const toolsData = [
   },
   {
     name: "Python",
-    description: "写脚本、爬虫、数据处理和 AI 应用的首选，胶水之王。",
+    description: "测试脚本、数据处理和 AI 应用的主力语言，胶水之王。",
     link: "https://www.python.org/",
     image: "/tech/python-original.svg",
   },
@@ -47,13 +47,13 @@ export const toolsData = [
   },
   {
     name: "Docker",
-    description: "把环境和应用打包成容器，本地大模型和自部署服务全靠它隔离。",
+    description: "把环境和应用打包成容器，大模型私有化部署与自建服务全靠它隔离。",
     link: "https://www.docker.com/",
     image: "/tech/docker.svg",
   },
   {
     name: "Ollama",
-    description: "本地跑大模型最省心的方式，一条命令拉起 DeepSeek、Qwen 等模型。",
+    description: "本地跑大模型的入门首选；生产里用 llama.cpp 做量化部署与推理调优。",
     link: "https://ollama.com",
     image: "/tech/ollama.svg",
   },
@@ -101,7 +101,7 @@ export const toolsData = [
   },
   {
     name: "Redis",
-    description: "内存数据库，缓存、队列和限流的高性能答案。",
+    description: "内存数据库，缓存与限流的高性能答案，也常见于代理池场景。",
     link: "https://redis.io",
     image: "/tech/redis.svg",
   },
@@ -116,11 +116,5 @@ export const toolsData = [
     description: "写作与文档的通用格式，博客、README、笔记全是它。",
     link: "https://www.markdownguide.org/",
     image: "/tech/markdown-original.svg",
-  },
-  {
-    name: "Figma",
-    description: "界面设计与原型工具，动手写代码之前先画个大概。",
-    link: "https://www.figma.com",
-    image: "/tech/figma.svg",
   },
 ];

@@ -24,7 +24,7 @@ export default function aboutTile() {
                 </div>
             </div>
             <p className="text-gray-500 dark:text-gray-300 text-base leading-relaxed max-w-[500px]">
-                这些是我日常真正在用的技术与工具：从 Next.js、Python 到本地大模型和 Docker。
+                这些是我日常真正在用的技术与工具：从测试三件套（Playwright / Postman / SQL）到 llama.cpp 本地大模型，再到自部署与开源。
                 顺手是好工具的唯一标准，用着舒服才会一直留在工具箱里。 🚀
             </p>
         </div>
