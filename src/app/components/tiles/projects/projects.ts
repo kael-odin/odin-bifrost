@@ -4,6 +4,57 @@
  */
 export const projectsData = [
   {
+    name: "Amazon 采集反爬指南 · 163★",
+    description:
+      "Thordata 官方仓库，由我创建并维护：Amazon 采集中的验证码识别与请求策略，配套 Scraper API / Python SDK 示例，是官网 Web Scraper 产品的内容入口。",
+    image: "/projects/cover-amazon-guide.svg",
+    github: "https://github.com/Thordata/how-to-bypass-amazon-captcha-when-scraping",
+    view: "https://www.thordata.com/products/web-scraper/amazon",
+    workStatus: true,
+    date: "2026 · 02",
+    demo: false,
+    personal: true,
+    tech: [
+      { name: "Python", image: "/tech/python-original.svg" },
+      { name: "GitHub", image: "/tech/github.svg" },
+      { name: "Markdown", image: "/tech/markdown-original.svg" },
+    ],
+  },
+  {
+    name: "Codex 插件中文市场 · 43★",
+    description:
+      "Codex 官方插件仓库自动同步、无损汉化（差异机器可证）、每日更新与可视化中文导航站；同一套机制复用到 claude-plugins-zh 与 zcode-plugins-zh。",
+    image: "/projects/cover-plugin-zh.svg",
+    github: "https://github.com/kael-odin/codex-plugins-zh",
+    view: "https://kael-odin.github.io/codex-plugins-zh/",
+    workStatus: true,
+    date: "2026 · 10",
+    demo: false,
+    personal: true,
+    tech: [
+      { name: "JavaScript", image: "/tech/js.svg" },
+      { name: "GitHub Actions", image: "/tech/github.svg" },
+      { name: "i18n", image: "/tech/markdown-original.svg" },
+    ],
+  },
+  {
+    name: "2080 Ti · 262K 长上下文",
+    description:
+      "在单张 RTX 2080 Ti 22G 上把 27B 模型跑到 262K 上下文、36.6 tok/s：Windows / sm_75 移植、MTP 投机解码、q8_0 KV 缓存，附完整复现链。",
+    image: "/projects/cover-kvmem.svg",
+    github: "https://github.com/kael-odin/2080ti-22G-kvmem-qwen3.8-27B-256K-36.6toks",
+    view: false,
+    workStatus: true,
+    date: "2026 · 09",
+    demo: false,
+    personal: true,
+    tech: [
+      { name: "llama.cpp", image: "/tech/ollama.svg" },
+      { name: "Linux", image: "/tech/linux.svg" },
+      { name: "Python", image: "/tech/python-original.svg" },
+    ],
+  },
+  {
     name: "Odin Heim",
     description:
       "以「操作系统」为灵感的互动个人主页模板：终端开机动画 → 数字桌面。改一个配置文件就能变成你自己的主页。",
@@ -55,9 +106,9 @@ export const projectsData = [
     ],
   },
   {
-    name: "Academic Skills 榜单",
+    name: "Academic Skills 榜单 · 225★",
     description:
-      "面向中文用户的学术论文与科研 Agent Skill 每日排行榜：自动搜索、过滤并排名 GitHub 上的科研 Skill 仓库。",
+      "面向中文用户的学术论文与科研 Agent Skill 每日排行榜：自动搜索、过滤并排名 GitHub 上的科研 Skill 仓库，每日自动更新，225 star。",
     image: "/projects/cover-research-skills.svg",
     github: "https://github.com/kael-odin/awesome-academic-research-skills",
     view: "https://kael-odin.github.io/awesome-academic-research-skills/",

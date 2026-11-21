@@ -92,10 +92,10 @@ export default function IntroTile() {
                         className="absolute left-0 bottom-[-7px] -z-10 w-full aspect-[977/88] pointer-events-none"
                     />
                 </span>
-                ，一名来自江苏徐州的 AI 应用工程师 / 测试工程师。
+                ，一名来自江苏徐州的 AI 应用 / 全栈工程师。
             </h1>
             <p className="mt-1 text-gray-500 dark:text-gray-400 text-base leading-relaxed max-w-[500px]">
-                白天做测试工程与 AI 落地（llama.cpp 私有化部署、FastGPT 知识库），业余把想法做成开源工具与自动化流水线。欢迎逛逛我的 GitHub。
+                白天负责三条代理/数据采集产品线的质量体系，业余做本地大模型与开源工具：llama.cpp 移植、Agent 工具链、全栈产品。欢迎逛逛我的 GitHub。
             </p>
         </div>
     );

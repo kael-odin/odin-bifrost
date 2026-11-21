@@ -54,7 +54,7 @@ const GlowBorder = styled.div`
 `;
 
 // 技能标签（对齐简历）
-const skills = ["测试工程", "Python", "Playwright", "Postman", "llama.cpp", "FastGPT / RAG", "AI 工具链", "开源"];
+const skills = ["大模型与 Agent", "Python", "TypeScript / React", "Playwright", "llama.cpp", "FastGPT / RAG", "质量工程", "开源"];
 
 // 教育背景（对齐简历）
 const education = [
@@ -66,7 +66,7 @@ const education = [
   {
     degree: "理科试验班（竺可桢学院）· 肄业后重新高考",
     institute: "浙江大学 · 浙江杭州",
-    period: "2017.09 - 2019.06",
+    period: "2015.09 - 2019.06",
   },
 ];
 
@@ -160,8 +160,8 @@ export default function AboutContent() {
               </div>
               <p className="mt-3 text-gray-500 dark:text-gray-300 text-xs leading-relaxed sm:text-sm md:text-base max-w-[900px]">
                 你好，我是<span className="font-bold text-gray-800 dark:text-gray-100">汤勇（Kael Odin）</span>，
-                一名来自江苏徐州的 AI 应用工程师 / 测试工程师。工作里负责三条代理与数据采集产品线的测试全流程，推动大模型私有化部署与企业知识库落地；
-                业余把想法快速做成能用的开源产品：OS 风格的个人主页模板、2200+ 提示词的中文镜像站、学术论文科研 Skill 每日榜单。
+                一名来自江苏徐州的 AI 应用 / 全栈工程师。工作里负责三条代理与数据采集产品线的质量体系：108 个接口底表、83 条接口坑位、每日自动巡检；
+                业余把大模型与想法做成能跑的东西：单卡 22G 跑 262K 上下文、225★ 科研 Skill 榜单、163★ 官方采集指南。
                 相信「先跑通，再讲清楚」，也相信持续输出的小项目比宏大的计划更有力量。
               </p>
 

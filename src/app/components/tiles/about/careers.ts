@@ -36,18 +36,18 @@ export const careersData: CareerEntry[] = [
     current: true,
     logo: "/company/kael-lab.svg",
     overview:
-      "负责 Thordata（企业级代理与数据采集服务，对标 Bright Data）、CoreClaw（网页数据采集平台，对标 Apify）、XSpark（静态 ISP 代理）三条产品线的功能测试全流程：需求评审 → 用例设计 → 执行 → 缺陷跟踪 → 回归验证，累计发现并推动修复缺陷 300+。",
+      "负责 Thordata（企业级代理与数据采集服务，对标 Bright Data）、CoreClaw（网页数据采集平台，对标 Apify）、XSpark（静态 ISP 代理）三条产品线的质量体系：需求评审 → 用例设计 → 执行 → 缺陷跟踪 → 回归验证，累计推动修复缺陷 300+，并把重复检查做成每日自动巡检。",
     myRole:
-      "针对代理与采集业务设计专项测试：IP 连通率与响应延迟、会话保持与轮换正确性、采集任务成功率与数据交付准确性、HTTP(S)/SOCKS5 多协议兼容。结合接口测试（Postman + 抓包分析）、Web UI 自动化（Playwright + pytest）与 SQL 数据核对，沉淀可复用用例与脚本；同时推动企业 AI 落地（llama.cpp 私有化部署 + FastGPT 知识库 + 模型选型评测），为同事提供常态化的 AI 配置与疑难支持。",
+      "建立 108 个接口端点实测底表与 83 条接口坑位；自建巡检 21 项自动 + 16 项浏览器检查，工作日一期、钉钉日报直达责任人；问题台账 88 条，修复 / 关闭 52 条。负责资金链路对账（CRM ↔ 后台 480 笔订单、¥3,267 双边一致）与安全测试（自建八模块 DAST，拦下证件照公网可下载、回调无签名等越权链）；完成公共开放 API 14 个接口的正式全量验收。同时推动企业 AI 落地（llama.cpp 私有化部署 + FastGPT 知识库 + 模型选型评测），支撑 50+ 同事。",
     projects: [
       {
         name: "Thordata · 代理与数据采集",
-        image: "/projects/cover-blog.svg",
+        image: "/projects/cover-amazon-guide.svg",
         link: "https://www.thordata.com/",
       },
       {
         name: "CoreClaw · 网页数据采集平台",
-        image: "/projects/cover-prompts-zh.svg",
+        image: "/projects/cover-plugin-zh.svg",
       },
       {
         name: "XSpark · 静态 ISP 代理",
@@ -89,9 +89,19 @@ export const careersData: CareerEntry[] = [
         link: "https://kael-odin.github.io/prompts-chat-zh/",
       },
       {
-        name: "Academic Skills 榜单",
+        name: "Academic Skills 榜单 · 225★",
         image: "/projects/cover-research-skills.svg",
         link: "https://kael-odin.github.io/awesome-academic-research-skills/",
+      },
+      {
+        name: "Thordata 采集反爬指南 · 163★",
+        image: "/projects/cover-amazon-guide.svg",
+        link: "https://github.com/Thordata/how-to-bypass-amazon-captcha-when-scraping",
+      },
+      {
+        name: "2080 Ti 22G · 262K 长上下文",
+        image: "/projects/cover-kvmem.svg",
+        link: "https://github.com/kael-odin/2080ti-22G-kvmem-qwen3.8-27B-256K-36.6toks",
       },
     ],
     skills: [

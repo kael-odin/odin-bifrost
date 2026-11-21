@@ -11,7 +11,7 @@ export const siteConfig = {
   /** 浏览器标签页标题 */
   title: "汤勇 Kael Odin | 个人作品集",
   description:
-    "汤勇（Kael Odin）的个人作品集 —— AI 应用工程师 / 测试工程师：大模型私有化部署、企业知识库、自动化测试与开源工具。",
+    "汤勇（Kael Odin）的个人作品集 —— AI 应用 / 全栈工程师：大模型本地推理与 Agent 工具链、全栈产品交付、自动化质量体系与开源项目。",
 
   /** 邮箱 */
   email: "sczxtangyong@163.com",

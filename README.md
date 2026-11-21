@@ -43,7 +43,7 @@ npm run preview      # 本地预览构建产物
 | 头像 / Logo / OG 图 | `assets-src/*.svg` 母版 → `node assets-src/build-avatars.mjs`、`node scripts/generate-brand-assets.mjs` |
 
 > 首页卡片支持拖拽换位，刷新后回到 `TILE_CONFIG` 默认顺序。
-> **待办提醒**：`AboutContent.tsx` 里的教育背景目前是占位示例，记得替换。
+> 教育背景、经历与项目均已对齐真实简历（2026-11 更新）。
 
 ## 🌐 部署
 

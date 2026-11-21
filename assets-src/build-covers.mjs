@@ -160,6 +160,21 @@ cover({
   subtitle: "github.com/kael-odin/awesome-free-proxy-list",
   from: "#022C22", to: "#065F46", accent: "#34D399", glyph: G.shield("#34D399"),
 });
+cover({
+  file: "cover-amazon-guide.svg", title: "Amazon 采集反爬指南",
+  subtitle: "Thordata 官方仓库 · 163★",
+  from: "#1C1917", to: "#7C2D12", accent: "#FB923C", glyph: G.shield("#FB923C"),
+});
+cover({
+  file: "cover-plugin-zh.svg", title: "Codex 插件中文市场",
+  subtitle: "github.com/kael-odin/codex-plugins-zh",
+  from: "#0B1120", to: "#1E3A8A", accent: "#60A5FA", glyph: G.chat("#60A5FA"),
+});
+cover({
+  file: "cover-kvmem.svg", title: "2080 Ti · 262K 长上下文",
+  subtitle: "github.com/kael-odin/2080ti-22G-kvmem",
+  from: "#0A0A0A", to: "#134E4A", accent: "#2DD4BF", glyph: G.terminal("#2DD4BF"),
+});
 
 /* ---------- 博客封面（生成到 public/blog/） ---------- */
 
